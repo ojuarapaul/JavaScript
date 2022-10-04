@@ -1,0 +1,15 @@
+//Who is gonna pay the Bill?
+function payForLunch() {
+    return Math.floor(Math.random() * (peopleLength));
+}
+//can include a prompt to input the guests
+const people = ["Paulo", "Sil", "Marcelo", "Tamiris", "Fabiana", "José", "Mara", "Michelle", "Adam"];
+var peopleLength = people.length;
+console.log("array number of elements is: ", peopleLength, typeof (peopleLength));
+var payer = payForLunch(peopleLength);
+var payer = people.at(payer);
+console.log(payer, " will pay the fucking bill")
+
+
+
+
