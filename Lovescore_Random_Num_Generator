@@ -1,0 +1,19 @@
+//Love score generator (random numbers generator)
+//Love score generator (random numbers generator)
+
+prompt ("What is your name?");
+prompt ("What is their name?");
+
+var loveScore = Math.random() * 100; 
+// Math.random generates a number from 0 to 9, thats why we add 1 in the next instruction.
+// Marth.ranbdom generates a REAL number, so we use Math.floor to round it down to the next integer.
+loveScore = Math.floor (loveScore) +1;
+
+if (loveScore >= 50 && loveScore <= 75) {
+    alert("Your LoveScore is: " + loveScore + " and that's a pretty good match.")
+} else if (loveScore < 50) {
+   alert("Your LoveScore is: " + loveScore + " and you might go another route...")
+} else if (loveScore > 75) {
+   alert("Your LoveScore is: " + loveScore + " and that's awesome! Go buy the wedding ring!")
+}
+

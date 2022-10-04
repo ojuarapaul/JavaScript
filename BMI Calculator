@@ -1,0 +1,32 @@
+//BMI calculator
+function bmiCalc() {
+    var weightNum = weight * 1; //transforms string into number
+    var heightNum = height * 1; //transforms string into number
+    var heightSquare = Math.pow(heightNum, 2);
+    var bmiResult = (weightNum / heightSquare);
+    //console.log(bmiResult);
+    return bmiResult;
+}
+var weight = prompt("Type your weight in Kg");
+var height = prompt("Type your hight in meters");
+var getBmi = bmiCalc();
+var bmiRound = getBmi.toFixed(0);
+//console.log(bmiRound, typeof(bmiRound))
+var bmiRound = bmiRound*1;
+//console.log(bmiRound, typeof(bmiRound))
+
+// BMI Parameters
+//below 18.5 – you're in the underweight range. 
+//between 18.5 and 24.9 – you're in the healthy weight range. 
+//between 25 and 29.9 – you're in the overweight range. 
+//between 30 and 39.9 – you're in the obese range.
+
+if (bmiRound >= 18.5 && bmiRound <= 24.9) {
+    alert("Your BMI is: " + bmiRound + " and you're healthy")
+} else if (bmiRound < 18.5) {
+   alert("Your BMI is: " + bmiRound + " and you're underwheight")
+} else if (bmiRound >= 25 && bmiRound <= 29.9) {
+    alert("Your BMI is: " + bmiRound + " and you're overwheight")
+} else if (bmiRound >= 30) {
+    alert("Your BMI is: " + bmiRound + " and you're obese");
+}

@@ -1,0 +1,21 @@
+function includeName(){
+guestList.push(newname);
+}
+//function removeLastGuest(){
+//guestList.pop();
+//}
+var guestList=[];
+var n = prompt("Maximum Number of Guests: "); 
+//var inc = prompt("include a new guest or remove last guest input - type i/r");
+//if (inc = "i"){  
+for (let i = 0; i < n; i++) {  
+var newname = prompt("Guest name");
+includeName()
+//var inc = prompt("include a new guest or remove last guest input - type i/r");
+//} if (inc = "r")
+//{ 
+//removeLastGuest()
+//includeName()
+//}
+}
+alert("Your guests are: " + guestList);
