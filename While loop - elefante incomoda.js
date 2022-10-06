@@ -1,0 +1,16 @@
+function elephant() {
+    let i=1;
+    var eleph = ("incomodam, ");
+    console.log(i + " elefante incomoda muita gente,");
+    console.log((i+1) + " elefantes "+ eleph.repeat(i+1) + "muito mais...");
+}
+function elephants(){
+let i=2;
+var eleph = ("incomodam, ");
+while (i>=2 && i<10) {
+    console.log(i + " elefantes incomodam muita gente,");
+console.log((i+1) + " elefantes " + eleph.repeat(i+1) + "muito mais...");
+    i++;}
+}
+elephant()
+elephants()
