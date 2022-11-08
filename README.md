@@ -5,3 +5,5 @@
  
 I use this repository to store some short, sometimes funny JS scripts I've developed throughout the Complete 2022 Web Developer Bootcamp, from Udemy.
 inside the subfolder 'snippets' you may find some useful scripts I found elsewhere (not developed by me).
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
